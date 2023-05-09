@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+header {
+    height: 4em;
+    background-color:  rgb(1, 143, 72);
+    padding: 0 5em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 3em;
+}
+
+.menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 3em;
+    transition: 0.4s;
+}
+
+.mostrar-menu, .ocultar-menu {
+    font-size: 3em;
+    cursor: pointer;
+    transition: 0.4s;
+    display: none;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover, .mostrar-menu:hover, .ocultar-menu:hover {
+    color: black;
+}
+
+#check {
+    display: none;
+}
+
+/* Banner */
+
+#banner {
+    padding: 0 3.125em;
+    background-image: url(./assets/img/comida-fondo.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.contenido-banner {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#banner::before {
+    content: "";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.contenido-banner h3 {
+    font-size: 1.185em;
+    font-weight: 400;
+    padding: 0.625em 0;
+}
+
+.contenido-banner h3 span {
+    font-weight: 600;
+
+}
+
+.boton-empezar {
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 1.25em 2.5em;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+
+.boton-empezar:hover {
+    background: gray;
+}
+
+/* Métodos */
+
+#metodos {
+    padding: 3.125em 3.125em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#metodos img {
+    border-radius: 100%;
+}
+
+#metodos div {
+    padding: 1.825em 1.825em;
+}
+
+#metodos div h4 {
+    font-size: 1.25em;
+    margin: 0.9em 0em;
+}
+
+#metodos div p {
+    color: black;
+    font-size: 0.8em;
+}
+
+.saber-mas {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 0.6em 1.875em;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 2vh;
+    transition: all 0.4s;
+    display: block;
+    text-align: center;
+}
+
+.saber-mas:hover {
+    background-color: gray;
+}
+
+/* Iconos */
+
+#iconos {
+    padding: 0em 3.125em;
+    background-color: gray;
+}
+
+.contenido-iconos {
+    padding: 3.125em 3.125em 0em 3.125em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-iconos div { 
+    flex: 1;
+    margin: 1.25em 0em;
+    border-right: 2px solid black;
+}
+
+#icono-mobile {
+    border: none;
+}
+.contenido-iconos div h5 {
+    font-size: 1.125em;
+    font-weight: 100;
+    margin: 0.6em 0;
+}
+
+.contenido-iconos div p {
+    color: rgb(83, 82, 82);
+    font-size: 0.9em;
+}
+
+/* Footer */
+
+footer {
+   background-color: black;
+   height: 5vh;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: gray;
+    transition: 0.4s;
+}
+
+/* Formulario */
+#portada {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1.5em;
+}
+    
+#portada h2 {
+    font-size: 3em;
+}
+
+#formulario {
+    background: rgb(1, 143, 72);
+    padding: 3.125em 0;
+    color: white;
+}
+
+#formulario h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1.25em;
+}
+
+#formulario form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form {
+    display: flex;
+}
+
+.datos-form div {
+    padding: 0.6em;
+    flex: 1;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.6em;
+}
+
+form input, textarea {
+    background: gray;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0.6em 0.3em;
+    outline: 0;
+    color: white;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus {
+    border-color:  rgb(1, 143, 72);
+    box-shadow: 0 0 0 1px  rgb(1, 143, 72);
+}
+
+form input::placeholder, form textarea::-moz-placeholder {
+    color: white;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6em;
+}
+
+/* Blog */
+
+main {
+    text-align: center;
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+main h3 {
+    margin: 3vh;
+    font-size: 3em;
+}
+main img {
+    margin-bottom: 3vh;
+}
+
+/* Responsive */
+
+@media (max-width: 760px) {
+    /* Header */
+    .mostrar-menu, .ocultar-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(1, 143, 72);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 6.25em 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 1.25em;
+    }
+
+    .ocultar-menu {
+        position: absolute;
+        top: 2.5em;
+        right: 2.5em;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    #metodos {
+        flex-direction: column;
+    }
+
+    .contenido-iconos {
+        flex-direction: column;
+    }
+    .contenido-iconos div {
+        border: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .datos-form {
+        flex-direction: column;
+    }
+
+    main img {
+        width: 60%;
+    }
+}
